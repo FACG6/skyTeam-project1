@@ -15,7 +15,6 @@ function getPressure(res) {
 }
 
 function getDescription(res) {
-    console.log(res.main.description);
 
     return res.description;
 }
@@ -25,7 +24,7 @@ function getImageUrl(res) {
 }
 
 function getClearAll(res) {
-    res = {};
+    return res = {};
 }
 
 let fetchData = function (searchFor, cb) {
@@ -63,7 +62,7 @@ let fetchData = function (searchFor, cb) {
             result.message = response.message;
             alert(result.message);
             // cb(result);
-            return;
+           
         } else {
             result.name = response.name;
             result.main = response.main;
