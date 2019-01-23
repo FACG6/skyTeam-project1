@@ -11,7 +11,7 @@ let fetchData = function (searchFor, cb) {
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 response = JSON.parse(xhr.responseText);
-                //console.log(response);
+                console.log(response);
 
                 callback(response);
             }
@@ -27,8 +27,8 @@ let fetchData = function (searchFor, cb) {
         result.main = (response.main);
         result.description = (response.weather[0].description);
         //invoke accessData second time
-        let newSearch = response.weather[0].description + ' weather';
-        let newUrl = `http://api.giphy.com/v1/gifs/search?q=${newSearch}&api_key=` + apiKeyGiphy;
+        let newSearch = response.weather[0].description ;
+        let newUrl = `http://api.giphy.com/v1/gifs/search?q=weather+${newSearch}&api_key=` + apiKeyGiphy;
         //console.log(newUrl)
         accessData(newUrl, (response) => {
             let index = Math.floor(Math.random() * response.data.length);
