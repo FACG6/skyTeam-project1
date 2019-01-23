@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="public/css/style.css" />
-  <title>sky teem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <section>
-    <div id="main">
-      <h1 class="header">sky team</h1>
-      <form  method="post">
-        <div>
-          <input id="myInput" class="search-city" type="text">
+    <form id="from">
+        <input id="searchFor" type="text" name='searchFor' placeholder="search for address">
+        <button type="button" id="searchBtn">Search</button>
+    </form>
+    <section class="">
+        <div class="weather">
+            <ul>
+                <li id="cityName">City name</li>
+                <li id="temp">temp(min - max)</li>
+                <li id="humidity">humidity</li>
+                <li id="pressure">pressure</li>
+                <li id="state"></li>
+            </ul>
         </div>
-        <button class="search-btn"></button>
-      </form>
-  </section>
-  <section id="sec">
-    <div id="results"></div>
-  <section>
-  
-  <script src="/public/js/logic.js"></script>
-  <script src="/public/js/dom.js"></script>
+        <div class="image-container">
+            <img class="image" src="" alt="">
+        </div>
+    </section>
+
+
+    <script src="./js/dom.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="./config.js"></script>
+
 </body>
 
 </html>
