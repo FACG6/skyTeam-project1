@@ -3,6 +3,7 @@ let searchBtn = document.getElementById('searchBtn');
 
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    // document.getElementById("flix").style.background = "blue";
     fetchData(searchText.value, (res) => {
         console.log(res);
         if (res.cod == 404) {
@@ -12,7 +13,7 @@ searchBtn.addEventListener('click', (e) => {
 
         } else {
 
-
+            document.getElementById("flix").style.background = "rgb(135, 135, 152)";
             //load weather
             document.querySelector('#cityName').textContent = 'City name: ' + getCityName(res);
             document.querySelector('#temp').textContent = 'Temperature: ' + getTemp(res);
