@@ -24,6 +24,8 @@ function getImageUrl(res) {
 }
 
 function getClearAll(res) {
+
+  
     return res = {};
 }
 
@@ -86,3 +88,7 @@ let fetchData = function (searchFor, cb) {
 
 
 }
+
+if (typeof module !== 'undefined') {
+    module.exports = { getCityName , getTemp , getHumidity , getPressure , getDescription , getImageUrl , getImageUrl , getClearAll };
+  }
