@@ -12,10 +12,9 @@ function updateStatus(res){
 }
 searchBtn.addEventListener('click', (e) => {
     if(searchText.value !== ''){
-       
-        
-    
+   
     e.preventDefault();
+    // document.getElementById("flix").style.background = "blue";
     fetchData(searchText.value, (res) => {
         console.log(res);
         if (res.cod == 404) {
@@ -23,8 +22,12 @@ searchBtn.addEventListener('click', (e) => {
             alert(res.message);
             updateStatus(res); 
         } else {
+
           
        updateStatus(res); 
+
+        document.getElementById("flix").style.background = "rgb(135, 135, 152)";
+
             //load weather
          
         }

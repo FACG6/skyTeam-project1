@@ -1,1 +1,110 @@
-/* styling here */
+* {
+    box-sizing: border-box;
+    padding: 14px 5px 22px -9px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.image-container{
+    margin-top: 10%;
+    margin-right: inherit;
+}
+.imgg{
+    position: relative;
+}
+.image{
+    border-radius: 100%;
+    width: 100%;
+}
+.h1{
+    font-family: Lobster;
+    text-shadow: -1px 0 #944e4e, 0px 1px rgba(0,0,0,0.2);
+    width: 100%;
+    text-align: center;
+}
+.flix{
+    position: absolute;
+    left: 2px;
+    top: 313px;
+    /* background-color: rgba(144, 140, 140, 0.726); */
+    border-radius: 69px 5px 36px 11px;
+    margin-right: 10px;
+    margin-left: 36px;
+    width: 71vw;
+    min-height: 00px;
+}
+.flix{
+display: flex;
+flex-direction: initial;
+}
+body {
+   
+    height: 100vh;
+}
+#searchFor{
+    width: 51%;
+    font-size: 128%;
+    color: #352e2e;
+    padding-left: 2%;
+    font-family: "Noto Sans KR";
+    border-radius: 61px;
+    border: black solid;
+
+    flex: 5;
+
+}
+.imgg{
+    width: 100%;
+}
+#from{
+    display: flex;
+    display: flex;
+    width: 82vw;
+    margin: 7vw;
+
+}
+
+#searchBtn{
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+    width: 21%;
+    font-size: 20px;
+    color: black;
+    background: white;
+    border: black solid;
+    border-radius: 8px;
+    font-size: inherit;
+    flex: 1;
+    height: 100%;
+    padding-top: 5px;
+
+}
+.weather{
+    text-align: inherit;
+    color: blanchedalmond;
+}
+.weather ul{
+    list-style: none;
+}
+.main{
+    display: flex;
+   
+}
+
+
+.header{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.500);
+    text-shadow: 4px 4px #986418;
+    padding: 1em;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.search-city{
+    border: 2px solid palevioletred;
+    color: gray;
+}
+.search-btn{
+    background-color: palevioletred;
+    border: 2px solid gray;
+}

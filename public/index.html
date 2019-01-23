@@ -7,14 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>weatherApi</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <form id="from">
+<body style="background-color:#000000ab;">
+  <h1 class="h1">Sky Team</h1>
+  <form id="from">
         <input id="searchFor" type="text" name='searchFor' placeholder="search for address">
         <button type="button" id="searchBtn">Search</button>
     </form>
-    <section class="">
+    <div>
+        <img class="imgg" src="https://www.poddlepod.com/wp-content/uploads/2018/04/world-map-transparent-background-e1493998871379_large.png">
+      </div>
+    <div class="flix" id="flix">
         <div class="weather">
             <ul>
                 <li id="cityName"></li>
@@ -27,7 +32,7 @@
         <div class="image-container">
             <img class="image" src="" alt="">
         </div>
-    </section>
+      </div>
 
 
     <script src="./js/dom.js"></script>
