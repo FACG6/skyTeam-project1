@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     padding: 14px 5px 22px -9px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -14,18 +14,21 @@
 .image{
     border-radius: 100%;
     width: 100%;
-}
+    
+}*/
 .h1{
+    color: #023144;
     font-family: Lobster;
-    text-shadow: -1px 0 #944e4e, 0px 1px rgba(0,0,0,0.2);
+    text-shadow: -1px 0 #2067c4c7;
     width: 100%;
     text-align: center;
 }
+/*
 .flix{
     position: absolute;
     left: 2px;
     top: 313px;
-    /* background-color: rgba(144, 140, 140, 0.726); */
+    background-color: rgba(144, 140, 140, 0.726);
     border-radius: 69px 5px 36px 11px;
     margin-right: 10px;
     margin-left: 36px;
@@ -39,7 +42,7 @@ flex-direction: initial;
 body {
    
     height: 100vh;
-}
+}*/
 #searchFor{
     width: 51%;
     font-size: 128%;
@@ -48,10 +51,20 @@ body {
     font-family: "Noto Sans KR";
     border-radius: 61px;
     border: black solid;
-
+    outline: none;
     flex: 5;
 
 }
+#searchFor , textarea {
+
+    background-color : #d1d1d1; 
+  
+  }
+
+
+
+/*
+
 .imgg{
     width: 100%;
 }
@@ -62,7 +75,7 @@ body {
     margin: 7vw;
 
 }
-
+*/
 #searchBtn{
     font-family: "Noto Sans KR";
     font-weight: bold;
@@ -76,8 +89,9 @@ body {
     flex: 1;
     height: 100%;
     padding-top: 5px;
-
+    outline: none;
 }
+/*
 .weather{
     text-align: inherit;
     color: blanchedalmond;
@@ -107,4 +121,80 @@ body {
 .search-btn{
     background-color: palevioletred;
     border: 2px solid gray;
+
+}
+
+.search-btn :hover {
+    color : rgb(187, 127, 127);
+} */
+
+/* @media(min-width: 900px  ){
+
+
+} */
+
+.bodystyle{
+    background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/weather-background-images-3.jpg);
+    background-repeat: no-repeat;
+    background-size:  246vh;
+}
+
+.skyTeam{
+    text-align: center;
+    font-size: 5.3vw;
+}
+
+.searchAndBtn{
+    text-align: center;
+}
+
+.mapImageDiv{
+    text-align: center;
+}
+.mapImage{
+    width: 90vw;
+    height: 41.4vh;
+    padding-top: 0vh;
+    margin-top: 5vh;
+}
+.DataAndImgDiv{
+    background: rgba(13, 140, 169, 0.19);
+    display: flex;
+    justify-content: center;
+    margin: 4vh auto;
+    width: 41vw;
+    border-radius: 7%;
+}
+
+.giphyImg{
+    max-height: 26vh;
+    padding-left: 0vw;
+    border-radius: 54%;
+    width: 100%;
+    height: 99%;
+}
+
+.unorderesList{
+    padding-right: 4vw;
+    list-style: none;
+    
+
+}
+
+.lableclass{
+    display: block;
+    font-size: 5vh;
+    color: #0aacff;
+    font-weight: bold;
+    text-shadow: -2px 0 16px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .DataAndImgDiv{  background: rgba(13, 140, 169, 0.19);
+    display: flex;
+    justify-content: center;
+    margin: 4vh auto;
+    width: 96vw;
+    border-radius: 7%;
+  }
 }

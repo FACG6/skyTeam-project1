@@ -10,18 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color:#000000ab;">
-  <h1 class="h1">Sky Team</h1>
-  <form id="from">
+<body class="bodystyle" style="background-color:#000000ab;">
+    <h1 class="h1 skyTeam">Sky Team</h1>
+    <form id="from" class="searchAndBtn">
+        <label class="lableclass" for="searchFor">Enter City name for its weather status.</label>
         <input id="searchFor" type="text" name='searchFor' placeholder="search for address">
-        <button type="button" id="searchBtn">Search</button>
+        <button type="button" id="searchBtn" class="searchAndBtn">Search</button>
+
     </form>
-    <div>
-        <img class="imgg" src="https://www.poddlepod.com/wp-content/uploads/2018/04/world-map-transparent-background-e1493998871379_large.png">
-      </div>
-    <div class="flix" id="flix">
+    <div class="mapImageDiv">
+        <img class=" imgg  mapImage" src="https://www.poddlepod.com/wp-content/uploads/2018/04/world-map-transparent-background-e1493998871379_large.png">
+    </div>
+    <div class="DataAndImgDiv flix" id="flix">
         <div class="weather">
-            <ul>
+            <ul class="unorderesList">
                 <li id="cityName"></li>
                 <li id="temp"></li>
                 <li id="humidity"></li>
@@ -30,9 +32,9 @@
             </ul>
         </div>
         <div class="image-container">
-            <img class="image" src="" alt="">
+            <img class="giphyImg image" src="" alt="">
         </div>
-      </div>
+    </div>
 
 
     <script src="./js/dom.js"></script>
